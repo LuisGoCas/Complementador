@@ -21,4 +21,4 @@ Project for starting to learn structural Design in VHDL
 <li>1 Combinational Circuit </li>
 </ul>
 <h4>Main workflow idea:</h4>
-the algorithm finds the first 1 starting from its lsb, and then negates (complements) the bits at the left.
+the algorithm finds the first "1" starting from its lsb, and then negates (complements) the bits at the left.
