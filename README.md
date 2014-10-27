@@ -1,10 +1,10 @@
 Complementador
 ==============
 
-Complementador a 2 de 8 bits
+<h2>Complementador a 2 de 8 bits</h2>
 
-Input  A: 8 bits number
-Output B: A 2-complement 
+<h3>Input  A: 8 bits number</h3>
+<h3>Output B: A 2-complement </h3>
 
 Even though there's the possibility to do 
 this as a big combinational circuit, the aim
@@ -13,8 +13,9 @@ of an ASM and its structural design using a
 Control Block.
 
 Project for starting to learn structural Design in VHDL
-The proyect contains:
-2 Registers
-1 Control Unit
-1 Combinational Circuit
-
+<h4>The proyect contains:</h4>
+<ul>
+<li>2 Registers </li>
+<li>1 Control Unit </li>
+<li>1 Combinational Circuit </li>
+</ul>
