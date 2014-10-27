@@ -15,6 +15,7 @@ Control Block.
 Project for starting to learn structural Design in VHDL
 <h4>The proyect contains:</h4>
 <ul>
+<li>1 Top file : complementador.vhd</li>
 <li>2 Registers </li>
 <li>1 Control Unit </li>
 <li>1 Combinational Circuit </li>
