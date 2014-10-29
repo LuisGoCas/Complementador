@@ -6,11 +6,16 @@ Complementador
 <h3>Input  A: 8 bits number</h3>
 <h3>Output B: A 2-complement </h3>
 
-Even though there's the possibility to do 
-this as a big combinational circuit, the aim
-of this project is to understand the workflow 
-of an ASM and its structural design using a
-Control Block.
+Despite the fact that it is possible to specify
+this circuit as a big combinational design, it
+becomes quite cumbersome as the number of bits increases,
+thus by taking the structural approach we can guarantee
+an easy to manage and scalable system which makes it 
+relatively straightforward to modify for a bigger 
+number of bits however, the real main reason for this
+project is to grasp the workflow of an ASM
+and the general steps in structural design which includes
+registers and Control Units Block.
 
 Project for starting to learn structural Design in VHDL
 <h4>The proyect contains:</h4>
@@ -21,4 +26,4 @@ Project for starting to learn structural Design in VHDL
 <li>1 Combinational Circuit </li>
 </ul>
 <h4>Main workflow idea:</h4>
-the algorithm finds the first "1" starting from its lsb, and then negates (complements) the bits at the left.
+the algorithm finds the first "1" starting from its lsb, and then negates (complements) the bits at the left of it.
