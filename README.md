@@ -1,6 +1,6 @@
 Complementador
 ==============
-
+[![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](https://tldrlegal.com/license/mit-license)
 <h2>Complementador a 2 de 8 bits</h2>
 
 <h3>Input  A: 8 bits number</h3>
