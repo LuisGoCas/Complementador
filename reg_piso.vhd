@@ -1,15 +1,15 @@
 library ieee;
 use ieee.std_logic_1164.all;
-entity reg_A is
+entity reg_piso is
 	port(
 		clk,ld_sh,stop : in std_logic;
 		para_In : in std_logic_vector(7 downto 0);
 		X : out std_logic
 	);
-end reg_A;
+end reg_piso;
 --piso
 --parallel in serial out
-architecture arch of reg_A is
+architecture arch of reg_piso is
 	signal temp : std_logic_vector(7 downto 0);
 begin
 	process(clk,para_In,ld_sh,stop)

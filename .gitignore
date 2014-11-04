@@ -1,0 +1,9 @@
+# Archivos de compilacion
+complementador.done
+complementador.flow.rpt
+complementador.map.rpt
+complementador.map.summary
+
+# Carpetas
+/db/
+/incremental_db/
