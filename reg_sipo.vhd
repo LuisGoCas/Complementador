@@ -5,7 +5,6 @@ use ieee.std_logic_1164.all;
 entity reg_sipo is
 	port(
 		clk,ld_sh,stop : in std_logic;
-		--clk,ld_sh : in std_logic;
 		Z : in std_logic;
 		X : buffer std_logic_vector(7 downto 0)
 	);
