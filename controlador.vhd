@@ -4,10 +4,10 @@ use ieee.std_logic_unsigned.all;
 
 entity controlador is
 	port(
-		clk,rst 	: in std_logic;
-		X			: in std_logic;
+		clk,rst : in std_logic;
+		X	: in std_logic;
 		Y	: out std_logic;
-		ld_sh,stop		: out std_logic
+		ld_sh,stop	: out std_logic
 		--ld_sh		: out std_logic
 	);
 end controlador;
