@@ -7,22 +7,20 @@ entity reg_sipo is
 		clk,ld_sh,stop : in std_logic;
 		--clk,ld_sh : in std_logic;
 		Z : in std_logic;
-		X : out std_logic_vector(7 downto 0)
+		X : buffer std_logic_vector(7 downto 0)
 	);
 end reg_sipo;
+
 architecture arch of reg_sipo is
-	signal temp : std_logic_vector(7 downto 0);
 begin
-	process(clk,ld_sh,stop,temp,Z)
+	process(clk,ld_sh,stop,Z,X)
 	begin
 		if (rising_edge(clk) and stop = '0') then
 			if(ld_sh = '0') then
-				temp(7 downto 0) <= Z & temp(7 downto 1);
-	 			X <= temp;	
+				X <= Z & X(7 downto 1);
 			else 
-				temp <= "00000000";
+				X <= "00000000";
 			end if;
 		end if;
-		X <= temp;
 	end process;
 end arch;

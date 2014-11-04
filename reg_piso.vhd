@@ -17,8 +17,8 @@ begin
 		if(ld_sh = '1') then
 			temp <= para_In;
 		elsif (rising_edge(clk) and stop = '0') then
-				X <= temp(0);
-				temp(7 downto 0) <= '0' & temp(7 downto 1); 
+			X <= temp(0);
+			temp <= '0' & temp(7 downto 1); 
 		end if;
 	end process;
 end arch;
