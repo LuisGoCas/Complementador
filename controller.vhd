@@ -24,7 +24,7 @@ begin
 			pr <= s0;
 			ld_sh <= '1';
 			stop <= '0';
-		elsif(rising_edge(clk) and rst = '0') then
+		elsif rising_edge(clk) then
 			contador <= contador + 1;
 			ld_sh <= '0';
 			pr <= sg;
