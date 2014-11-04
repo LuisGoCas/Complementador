@@ -36,21 +36,21 @@ architecture structural of complementador is
 		Z : out std_logic
 	);
 	end component;
-	-------- Controlador -----------
-	component controlador is
+	-------- Controller -----------
+	component controller is
 	port(
 		clk,rst 	: in std_logic;
 		X			: in std_logic;
-		Y	: out std_logic;
+		Y	      : out std_logic;
 		ld_sh,stop		: out std_logic
 		--ld_sh		: out std_logic
-		);
+	);
 	end component;
 	-- intermediate signal declaration
 	signal X_out, Z_out, Y_out, ld_sh_out, stop_out : std_logic;
 begin	
-	u1	: controlador port map(clk, rst, X_out, Y_out, ld_sh_out, stop_out);
-	u2	: reg_piso 		  port map(clk, ld_sh_out, stop_out, I, X_out);
-	u3	: comp_ser 	  port map(X_out, Y_out, Z_out);
-	u4	: reg_sipo 		  port map(clk, ld_sh_out,stop_out, Z_out, O);
+	u1	: controller	port map(clk, rst, X_out, Y_out, ld_sh_out, stop_out);
+	u2	: reg_piso		port map(clk, ld_sh_out, stop_out, I, X_out);
+	u3	: comp_ser		port map(X_out, Y_out, Z_out);
+	u4	: reg_sipo		port map(clk, ld_sh_out,stop_out, Z_out, O);
 end structural;

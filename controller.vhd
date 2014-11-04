@@ -2,7 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 
-entity controlador is
+entity controller is
 	port(
 		clk,rst 	: in std_logic;
 		X			: in std_logic;
@@ -10,9 +10,9 @@ entity controlador is
 		ld_sh,stop		: out std_logic
 		--ld_sh		: out std_logic
 	);
-end controlador;
+end controller;
 
-architecture archcon of controlador is
+architecture archcon of controller is
 	type estado is (s0,s1);
 	signal pr,sg : estado;
 	signal contador : integer range 0 to 15 := 0;

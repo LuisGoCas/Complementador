@@ -1,8 +1,12 @@
 # Archivos de compilacion
 complementador.done
-complementador.flow.rpt
-complementador.map.rpt
-complementador.map.summary
+complementador.*.rpt
+complementador.*.summary
+complementador.fit.*
+complementador.jdi
+complementador.qsf
+complementador.pin
+complementador.sof
 
 # Carpetas
 /db/
